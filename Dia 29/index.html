@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 29 - Weather Card UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.more').click(function() {
+                $('.back').addClass('active') 
+                $('.front').removeClass('active') 
+                })
+            $('.go-back').click(function() {
+                $('.back').removeClass('active') 
+                $('.front').addClass('active') 
+                })
+            })
+        
+    </script>
+</head>
+<body>
+    <div class="card">
+        <div class="front active">
+            <div class="location">New York</div>
+            <div class="more"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+            <div class="weather">
+                <i class="fa fa-cloud" aria-hidden="true"></i>
+                <h1>25<sup>o</sup><br><span>Hoje</span></h1>
+
+                <ul class="forecast">
+                    <li>
+                        <div class="day">Domingo</div>
+                        <div class="temperature"><i class="fa fa-snowflake-o" aria-hidden="true"></i> 6<sup>o</sup></div>
+                    </li>
+
+                        <li>
+                            <div class="day">Segunda</div>
+                            <div class="temperature"><i class="fa fa-tint" aria-hidden="true"></i> 14<sup>o</sup></div>
+                        </li>
+
+                        <li>
+                            <div class="day">Terça</div>
+                            <div class="temperature"><i class="fa fa-snowflake-o" aria-hidden="true"></i> 3<sup>o</sup></div>
+                        </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="back">
+            <div class="go-back"><i class="fa fa-chevron-circle-left"></i></div>
+            <ul class="forecast">
+                <li>
+                    <div class="day">Domingo</div>
+                    <div class="temperature"><i class="fa fa-cloud" aria-hidden="true"></i> 18<sup>o</sup></div>
+                </li>
+
+                    <li>
+                        <div class="day">Segunda</div>
+                        <div class="temperature"><i class="fa fa-tint" aria-hidden="true"></i> 25<sup>o</sup></div>
+                    </li>
+
+                <li>
+                    <div class="day">Terça</div>
+                    <div class="temperature"><i class="fa fa-snowflake-o" aria-hidden="true"></i> 3<sup>o</sup></div>
+                </li>
+
+                <li>
+                    <div class="day">Quarta</div>
+                    <div class="temperature"><i class="fa fa-cloud" aria-hidden="true"></i> 8<sup>o</sup></div>
+                </li>
+
+                <li>
+                    <div class="day">Quinta</div>
+                    <div class="temperature"><i class="fa fa-tint" aria-hidden="true"></i> 6<sup>o</sup></div>
+                </li>
+
+                <li>
+                    <div class="day">Sexta</div>
+                    <div class="temperature"><i class="fa fa-tint" aria-hidden="true"></i> 4<sup>o</sup></div>
+                </li>
+
+                <li>
+                    <div class="day">Sábado</div>
+                    <div class="temperature"><i class="fa fa-snowflake-o" aria-hidden="true"></i> - 4<sup>o</sup></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

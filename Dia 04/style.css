@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #313131;
+    font-family: sans-serif;
+}
+
+.side {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.side a {
+    background: #e74c3c;
+    color: white;
+    font-size: 22px;
+    display: block;
+    width: 130px;
+    padding: 12px;
+    text-decoration: none;
+    margin: 8px;
+    color: white;
+    border-radius: 6px;
+    margin-left: -100px;
+    transition: .6s all;
+}
+
+.side a:hover {
+    margin-left: 0;
+}
